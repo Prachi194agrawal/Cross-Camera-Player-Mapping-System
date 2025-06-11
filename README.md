@@ -34,7 +34,18 @@ In modern sports analytics, multiple camera systems capture gameplay from differ
 
 | Broadcast Camera | Tacticam Camera |
 |------------------|-----------------|
-| ![Broadcast Demo](videos/broadcast_demo.gif) | ![Tacticam Demo](videos/tacticam_demo.gif) |
+| ![Broadcast Demo](videos/broadcast_demo.gif) | 
+
+
+https://github.com/user-attachments/assets/3a6b76c1-b5a5-48d5-aff8-c5acf78acb9c
+
+
+
+![Tacticam Demo](videos/tacticam_demo.gif) |
+
+https://github.com/user-attachments/assets/6785800b-f742-4b2f-8cd9-dedc494adf66
+
+
 | *Main broadcast angle* | *Tactical camera angle* |
 
 ### Output Results
@@ -45,6 +56,10 @@ In modern sports analytics, multiple camera systems capture gameplay from differ
 | *Cross-camera comparison* | *Player mapping results* |
 
 ### Full Output Video
+
+
+https://github.com/user-attachments/assets/9f5614a5-5ee5-4a40-b437-8816f84e3c5f
+
 
 https://github.com/your-actual-username/cross-camera-player-mapping/assets/output_video.mp4
 
