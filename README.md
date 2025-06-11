@@ -33,14 +33,28 @@ In modern sports analytics, multiple camera systems capture gameplay from differ
 ### Input Videos
 | Broadcast Camera | Tacticam Camera |
 |------------------|-----------------|
+
+
+https://github.com/user-attachments/assets/c5a764ca-5190-4f3f-93a6-846c568ee6f7
+
+
 | ![Broadcast Demo](videos/broadcast_demo.gif) | ![Tacticam Demo](videos/tacticam_demo.gif) |
 | *Main broadcast angle* | *Tactical camera angle* |
+
+
+
+https://github.com/user-attachments/assets/5a7ecb16-42ea-45e3-ad90-14bf86b40345
+
 
 ### Output Results
 | Side-by-Side Comparison | Match Visualization |
 |-------------------------|-------------------|
 | ![Output Demo](videos/output_demo.gif) | ![Matches Demo](videos/matches_demo.gif) |
 | *Cross-camera comparison* | *Player mapping results* |
+
+
+https://github.com/user-attachments/assets/7a1c45c6-4db5-496a-8086-fa10d53cb366
+
 
 > **Note**: Place your video files in the `videos/` directory. Supported formats: `.mp4`, `.avi`, `.mov`
 
