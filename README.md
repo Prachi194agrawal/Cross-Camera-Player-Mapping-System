@@ -53,7 +53,11 @@ https://github.com/user-attachments/assets/5a7ecb16-42ea-45e3-ad90-14bf86b40345
 | *Cross-camera comparison* | *Player mapping results* |
 
 
-https://github.com/user-attachments/assets/7a1c45c6-4db5-496a-8086-fa10d53cb366
+
+https://github.com/user-attachments/assets/f209e91b-61d0-4e59-a4db-1abf43627450
+
+
+
 
 
 > **Note**: Place your video files in the `videos/` directory. Supported formats: `.mp4`, `.avi`, `.mov`
