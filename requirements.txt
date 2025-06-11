@@ -1,0 +1,34 @@
+# Core Dependencies
+ultralytics>=8.0.0
+opencv-python-headless>=4.8.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Machine Learning & Scientific Computing
+scipy>=1.10.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# Visualization & Plotting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+kaleido>=0.2.1
+
+# Image & Video Processing
+Pillow>=9.5.0
+imageio>=2.31.0
+
+# Data Manipulation
+pandas>=2.0.0
+
+# System & Utility
+tqdm>=4.65.0
+requests>=2.31.0
+
+# Optional: Jupyter/Colab Support
+ipython>=8.12.0
+jupyter>=1.0.0
+
+# Optional: Enhanced Performance
+numba>=0.57.0
