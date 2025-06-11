@@ -4,7 +4,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-Latest-red.svg)](https://pytorch.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.0+-green.svg)](https://opencv.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/cross-camera-player-mapping/blob/main/notebooks/demo_pipeline.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-actual-username/cross-camera-player-mapping/blob/main/notebooks/demo_pipeline.ipynb)
 
 ## 🎯 Problem Statement
 
@@ -31,38 +31,24 @@ In modern sports analytics, multiple camera systems capture gameplay from differ
 ## 🎬 Demo Videos
 
 ### Input Videos
+
 | Broadcast Camera | Tacticam Camera |
 |------------------|-----------------|
-
-
-https://github.com/user-attachments/assets/c5a764ca-5190-4f3f-93a6-846c568ee6f7
-
-
 | ![Broadcast Demo](videos/broadcast_demo.gif) | ![Tacticam Demo](videos/tacticam_demo.gif) |
 | *Main broadcast angle* | *Tactical camera angle* |
 
-
-
-https://github.com/user-attachments/assets/5a7ecb16-42ea-45e3-ad90-14bf86b40345
-
-
 ### Output Results
+
 | Side-by-Side Comparison | Match Visualization |
 |-------------------------|-------------------|
 | ![Output Demo](videos/output_demo.gif) | ![Matches Demo](videos/matches_demo.gif) |
 | *Cross-camera comparison* | *Player mapping results* |
 
+### Full Output Video
 
+https://github.com/your-actual-username/cross-camera-player-mapping/assets/output_video.mp4
 
-
-
-https://github.com/user-attachments/assets/dd01a62e-aee9-453f-aa23-c6117698deaa
-
-
-
-
-
-
+The complete output video demonstrates our system's ability to maintain consistent player identities across both camera angles throughout the entire sequence, with color-coded bounding boxes indicating matched players.
 
 > **Note**: Place your video files in the `videos/` directory. Supported formats: `.mp4`, `.avi`, `.mov`
 
@@ -73,7 +59,7 @@ https://github.com/user-attachments/assets/dd01a62e-aee9-453f-aa23-c6117698deaa
 Our solution implements a comprehensive **PlayerReIDPipeline** based on research in multi-view spatial localization and cross-camera view-overlap recognition:
 
 #### 1. **Object Detection Module**
-Model classes detected
+Model classes detected:
 {0: 'ball', 1: 'goalkeeper', 2: 'player', 3: 'referee'}
 
 - **Model**: YOLOv8-based detection system
@@ -101,70 +87,72 @@ Model classes detected
 
 ### Prerequisites
 
-Install required dependencies
+Install required dependencies:
+```bash
 pip install ultralytics opencv-python-headless torch torchvision scipy scikit-learn matplotlib plotly seaborn pandas numpy kaleido
 apt-get update && apt-get install -y libgl1-mesa-glx
-
+```
 
 ### Setup
-git clone https://github.com/yourusername/cross-camera-player-mapping.git
+```bash
+git clone https://github.com/your-actual-username/cross-camera-player-mapping.git
 cd cross-camera-player-mapping
 pip install -r requirements.txt
-
-
+```
 
 ## 📁 Project Structure
 
+```
 cross-camera-player-mapping/
 ├── README.md
 ├── requirements.txt
 ├── src/
-│ ├── player_reid_pipeline.py # Main pipeline implementation
-│ ├── visualization_suite.py # Analytics and plotting
-│ └── utils/
-│ ├── feature_extraction.py
-│ └── matching_algorithms.py
+│   ├── player_reid_pipeline.py   # Main pipeline implementation
+│   ├── visualization_suite.py    # Analytics and plotting
+│   └── utils/
+│       ├── feature_extraction.py
+│       └── matching_algorithms.py
 ├── models/
-│ └── best.pt # Pre-trained YOLO model
+│   └── best.pt                   # Pre-trained YOLO model
 ├── videos/
-│ ├── broadcast.mp4 # Input: Broadcast camera
-│ ├── tacticam.mp4 # Input: Tactical camera
-│ └── outputs/ # Generated output videos
+│   ├── broadcast.mp4             # Input: Broadcast camera
+│   ├── tacticam.mp4              # Input: Tactical camera
+│   └── outputs/                  # Generated output videos
 ├── notebooks/
-│ ├── demo_pipeline.ipynb # Google Colab demo
-│ └── visualization_demo.ipynb # Analytics dashboard
+│   ├── demo_pipeline.ipynb       # Google Colab demo
+│   └── visualization_demo.ipynb  # Analytics dashboard
 └── docs/
-├── technical_details.md
-└── api_reference.md
-
+    ├── technical_details.md
+    └── api_reference.md
+```
 
 ## 🎮 Usage
 
 ### Quick Start
+```python
 from src.player_reid_pipeline import PlayerReIDPipeline
 
-Initialize the pipeline
+# Initialize the pipeline
 pipeline = PlayerReIDPipeline('models/best.pt')
 
-Process videos and generate matches
+# Process videos and generate matches
 results = pipeline.process_videos('videos/broadcast.mp4', 'videos/tacticam.mp4')
 
-Create comprehensive output video
+# Create comprehensive output video
 create_comprehensive_output_video(
-pipeline, results,
-'videos/broadcast.mp4', 'videos/tacticam.mp4',
-'videos/outputs/cross_camera_output.mp4'
+    pipeline, results,
+    'videos/broadcast.mp4', 'videos/tacticam.mp4',
+    'videos/outputs/cross_camera_output.mp4'
 )
-
-
+```
 
 ### Google Colab Demo
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/cross-camera-player-mapping/blob/main/notebooks/demo_pipeline.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-actual-username/cross-camera-player-mapping/blob/main/notebooks/demo_pipeline.ipynb)
 
 ### Command Line Interface
+```bash
 python src/player_reid_pipeline.py --broadcast videos/broadcast.mp4 --tacticam videos/tacticam.mp4 --output videos/outputs/result.mp4
-
-
+```
 
 ## 📊 Performance Results
 
@@ -208,13 +196,14 @@ Based on successful pipeline execution:
 
 ### Model Configuration
 
-Processing parameters
+Processing parameters:
+```python
 FRAME_SAMPLING = "Middle 50% of video content"
 MAX_FRAMES = 30
 CONFIDENCE_THRESHOLD = 0.1 # Very low for maximum recall
 SIMILARITY_THRESHOLD = 0.02 # Minimum for valid matches
 FEATURE_DIMENSIONS = 32 # Total feature vector size
-
+```
 
 ### Feature Vector Composition
 - **Visual Features**: 24 dimensions (RGB histograms)
@@ -296,7 +285,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Author**: [Your Name]
 - **Email**: [your.email@example.com]
-- **Project Link**: [https://github.com/yourusername/cross-camera-player-mapping](https://github.com/yourusername/cross-camera-player-mapping)
+- **Project Link**: [https://github.com/your-actual-username/cross-camera-player-mapping](https://github.com/your-actual-username/cross-camera-player-mapping)
 
 ---
 
