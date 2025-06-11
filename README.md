@@ -165,7 +165,7 @@ create_comprehensive_output_video(
 ```
 
 ### Google Colab Demo
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-actual-username/cross-camera-player-mapping/blob/main/notebooks/demo_pipeline.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SIj9Du8kVC3cGy1xH50FKgm2d1bZm5tl?usp=sharing)
 
 ### Command Line Interface
 ```bash
@@ -301,9 +301,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- **Author**: [Your Name]
-- **Email**: [your.email@example.com]
-- **Project Link**: [https://github.com/your-actual-username/cross-camera-player-mapping](https://github.com/your-actual-username/cross-camera-player-mapping)
+- **Author**: Prachi Agrawal
+- **Email**:agrawalprachi7718@gmail.com
+- **Project Link**: [https://github.com/Prachi194agrawal/cross-camera-player-mapping](https://github.com/Prachi194agrawal/Cross-Camera-Player-Mapping-System)
 
 ---
 
